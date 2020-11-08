@@ -308,8 +308,8 @@ predicate logic. $\exists$! and exclusive-or (XOR) quantifiers are forbidden:
 \item $\forall f (\exists x (F(f,x)) \rightarrow \exists x (F(f,x) \vee M(f,x)))$
 \item $\forall h (\exists x (H(h,x)) \rightarrow \exists x (H(h,x) \vee H(x,h)))$
 \item $\forall u (\exists y \exists x(B(u,x) \wedge (M(x,y) \vee F(x,y))) \rightarrow \neg \exists y \exists x (S(u,x) \wedge (M(x,y) \vee F(x,y))))$
-\item $\forall x \forall y (B(x,y) \rightarrow \exists z[(M(z,x) \wedge M(z,y)) \vee (F(z,x) \wedge F(z,y)))])$
-\item $\forall x [\exists y \exists z(M(x,z) \wedge [M(z,y) \vee F(z,y)]) \rightarrow \forall y (\neg F(x,y))]$
+\item $\forall x \forall y ([B(x,y) \wedge B(y,x)] \rightarrow \exists z[(M(z,x) \wedge M(z,y)) \vee (F(z,x) \wedge F(z,y))])$
+\item $\forall x \forall g(\exists y[(M(y,x) \vee F(y,x)) \wedge M(g,y)] \rightarrow \forall z(-F(g,z))) $
 \item $\exists x([B(x,Ali) \vee S(x,Ali)] \wedge H(Alex,x))$
 \item $\exists x \exists y [\neg (x = y) \wedge (M(Alex,x) \wedge M(Alex,y)) \vee (F(Alex,x) \wedge F(Alex,y))]$
 \item $\forall y \exists x [(M(x,y)) \rightarrow \forall z (\neg (z = x) \rightarrow \neg M(z,x))]$
@@ -375,9 +375,9 @@ predicate logic. $\exists$! and exclusive-or (XOR) quantifiers are forbidden:
 	
 	$5$ & & & $q$ & $\rightarrow e, 2,4$ & \\
 	
-	$6$ & & & \textit{contradiction} & & \\ \cline{1-6}
+	$6$ & & & $\bot$ & $\bot$ \textit{from} 5,3 & \\ \cline{1-6}
 	
-	$7$ & & & $\neg q$ & $6$, \textit{Proof by contradiction} &
+	$7$ & & & $\neg p$ & $4-6$  &
 
 	
 	\\\\\\    \cline{1-6} \cline{1-6} 
@@ -467,9 +467,9 @@ predicate logic. $\exists$! and exclusive-or (XOR) quantifiers are forbidden:
 	
 	$2$ & & & $P(a)$ & \textit{assumption} & \\ 
 	
-	$3$ & & & $\forall x(P(x))$ & \textit{universal generalization}, 1 & \\
+	$3$ & & & $\forall x P(x)$ & \textit{universal generalization}, 2 & \\
 	
-	$4$ & & & S & \textit{MP} 3, 1 & \\  \cline{2-5}
+	$4$ & & & S & \textit{MP} 1, 3 & \\  \cline{2-5}
 	
 	$5$ & & & $P(a) \rightarrow S$ & $\rightarrow$i, 2-4 & \\ \cline{1-6}
 	
