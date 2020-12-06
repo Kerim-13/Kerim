@@ -1,0 +1,267 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\usepackage[hmargin=3cm,vmargin=6.0cm]{geometry}
+%\topmargin=0cm
+\topmargin=-2cm
+\addtolength{\textheight}{6.5cm}
+\addtolength{\textwidth}{2.0cm}
+%\setlength{\leftmargin}{-5cm}
+\setlength{\oddsidemargin}{0.0cm}
+\setlength{\evensidemargin}{0.0cm}
+
+% symbol commands for the curious
+\newcommand{\setZp}{\mathbb{Z}^+}
+\newcommand{\setR}{\mathbb{R}}
+\newcommand{\calT}{\mathcal{T}}
+
+\begin{document}
+
+\section*{Student Information } 
+%Write your full name and id number between the colon and newline
+%Put one empty space character after colon and before newline
+Full Name :  Berkin Kerim KONAR\\
+Id Number :  2375343\\
+
+% Write your answers below the section tags
+\section*{Answer 1}
+\paragraph{a.}
+i) since $T_1 = \{ \emptyset, A \} $   consist of $\emptyset, A$ and the union and intersections of all of it's subsets $T_1$ is a topology. \\
+
+ii) $T_2 = \{\emptyset, \{a\}, \{b\}, \{c\}, \{d\}, A\}$ is not a topology since $\{a, b\}$ is not in the set $T_2$. \\
+
+iii) $T_3 = \{\emptyset, \{a, b\}, \{b\}, \{b, c\}, \{a, b, c\}, A\}$ is a topology since $\emptyset, A$ and the union and intersection of all of it's subsets are in $T_3$. \\
+
+iv) $T_4 = \{\emptyset, \{a, c\}, \{b\}, \{b, c\}, \{c\}, \{b, d\}, A\}$ is not a topology since $\{a,b,c \}$ is not a subset of $T_4$.
+
+\paragraph{b.}
+i)\\
+
+Since $U$ is a subset of $A$ we can write $U$ as $U = A - S$ where $S$ is an another subset of $A$.\\
+
+If we choose $U = A$, $A-U = \emptyset$ which is finite, and for $U = \emptyset$, $A-U = A$ which is $A$.\\
+
+So $A$ and $\emptyset$ are a subset of the set of U's.\\
+
+It can be seen that all pairs of U's can be written the form such that.\\
+
+$U_1 = A - S_1$ and $U_2 = A - S_2$. where $S_1 = a_1 \cup a_2$ and $S_2 = a_2 \cup a_3$ such that.\\
+
+$(a_1 \cap a_2) = (a_2 \cap a_3) = (a_1 \cap a_3) = \emptyset$.\\
+
+Now let.\\
+
+$(U_1 = A - (a_1 \cup a_2))$, and $(U_2 = A - (a_2 \cup a_3))$ where,\\
+
+$(a_1 \cap a_2) = (a_2 \cap a_3) = (a_1 \cap a_3) = \emptyset$, and $a_1, a_2, a_3$ is a subset of $A$.\\
+
+Then we get $A - U_1 = (a_1\cup a_2)$ and, $A-U_2 = (a_2 \cup a_3)$.\\
+
+So $(a_1 \cup a_2)$ and, $(a_2 \cup a_3)$ are finite sets which implies $a_1, a_2, a_3$ are all finite.\\
+
+Now let's check whether $(U_1 \cup U_2 = A - a_2)$ and $(U_1 \cap U_2 = A - (a_1 \cup a_2 \cup a_3))$ are in the set of U's\\
+
+since all $a_1, a_2, a_3$ are finite both $U_1 \cup U_2$, and $U_1 \cap U_2$ are a subset of the set of U's because $A - (U_1 \cup U_2)$ and, $A - (U_1 \cap U_2)$ are finite.\\
+
+Now if we try to observe for the set $\{U_1, U_2, ...., U_n\}$ (assume that they are in the set of U's) since we have proven that the union and intersection of any pairs in the set are also in the set of U's we can say that $U_1 \cup U_2 \cup .... U_m$ and $U_1 \cap U_2 \cap .... U_m$ where $m \le n$ are also in the set of U's.\\
+
+Therefore the set U's satisfies all of the conditions of a topology therefore the set of U's is a topology.\\\\\\
+
+ii)\\
+
+Since $U$ is a subset of $A$ we can write $U$ as $U = A - S$ where $S$ is an another subset of $A$.\\
+
+If we choose $U = A$, $A-U = \emptyset$ which is countable, and for $U = \emptyset$, $A-U = A$ which is $A$.\\
+
+So $A$ and $\emptyset$ are a subset of the set of U's.\\
+
+It can be seen that all pairs of U's can be written the form such that.\\
+
+$U_1 = A - S_1$ and $U_2 = A - S_2$. where $S_1 = a_1 \cup a_2$ and $S_2 = a_2 \cup a_3$ such that.\\
+
+$(a_1 \cap a_2) = (a_2 \cap a_3) = (a_1 \cap a_3) = \emptyset$.\\
+
+Now let.\\
+
+$(U_1 = A - (a_1 \cup a_2))$, and $(U_2 = A - (a_2 \cup a_3))$ where,\\
+
+$(a_1 \cap a_2) = (a_2 \cap a_3) = (a_1 \cap a_3) = \emptyset$, and $a_1, a_2, a_3$ are a subset of $A$.\\
+
+Then we get $A - U_1 = (a_1\cup a_2)$ and, $A-U_2 = (a_2 \cup a_3)$.\\
+
+So $(a_1 \cup a_2)$ and, $(a_2 \cup a_3)$ are countable sets which implies $a_1, a_2, a_3$ are all countable.\\
+
+Now let's check whether $(U_1 \cup U_2 = A - a_2)$ and $(U_1 \cap U_2 = A - (a_1 \cup a_2 \cup a_3))$ are in the set of U'ss\\
+
+since all $a_1, a_2, a_3$ are countable both $U_1 \cup U_2$, and $U_1 \cap U_2$ are a subset of the set of U's because $A - (U_1 \cup U_2)$ and, $A - (U_1 \cap U_2)$ are countable.\\
+
+Now if we try to observe for the set $\{U_1, U_2, ...., U_n\}$ (assume that they are in the set of U's) since we have proven that the union and intersection of any pairs in the set are also in the set of U's we can say that $U_1 \cup U_2 \cup .... U_m$ and $U_1 \cap U_2 \cap .... U_m$ where $m \le n$ are also in the set of U's.\\
+
+Therefore the set U's satisfies all of the conditions of a topology therefore the set of U's is a topology.\\\\\\\\\\\\\\\\
+
+
+
+iii)\\
+
+Let A be the Real numbers in the closed [0,2] set. let $U_1$ be the real numbers in the set [0,1), and $U_2$ be the real numbers in the set (1,2].\\
+
+Since $A-U_1 = [1,2]$, and $A-U_2 = [0,1]$ which are infinite $U_1$ and $U_2$ are in the set of U's.\\
+
+But $U_1 \cup U_2 = [0,2] - {1}$ is not in the set of u's since $A - (U_1 \cup U_2) = {1}$ which is not infinite.\\
+
+Therefore the set of U's are not a topology.\\\\
+
+\section*{Answer 2}
+\paragraph{a.}
+Let $a_1, a_2 \in A$ and $b_1, b_2 \in (0,1)$.\\
+
+If $f(a_1, b_1) = f(a_2, b_2)$ then $a_1 + b_1 = a_2 + b_2$ which implies $a_1 - a_2 = b_2 - b_1$.\\
+
+Since $b_1, b_2 \in A$, $b_2 - b_1$ should be an element of $Z$ which means $a_1 - a_2 \in Z$.\\
+
+We also know that $a_1 - a_2 \in (-1,1)$ since $a_1, a_2 \in (0,1)$.\\
+
+Since the only number that belongs to $Z$ and $(-1,1)$ is we conclude that 0 $a_1 - a_2 = 0$ which means $a_1 = a_2$.\\
+
+And $b_1 = b_2$ since $a_1 - a_2 = b_2 - b_1$.\\
+
+Therefore the function f is injective.\\
+
+\paragraph{b.}
+Let $f(z,r) = 6$ where $z \in A$ and, $r \in (0,1)$ we can see that $r+z = 6$ from this we can conclude that $z = 6-r$.\\
+
+Since $z \in A$ we can say that $(6-r) \in A$ but there is no value of $r$ that makes $(6-r) \in A$ therefore we conclude that there exist no combination of $z,r$ that satisfies $f(z,r) = 6$.\\
+
+We conclude that f is not surjective.\\
+
+\paragraph{c.}
+From part a we have proved that f is a one-to-one mapping from $A \times (0,1)$ to $[0,\infty)$ and if we assume that there exist a one-to-one function g from $[0,\infty)$ to $A \times (0,1)$. By SCHRÖDER-BERNSTEIN Theorem we can conclude that there is a one-to-one correspondence between two sets and, this one-to-one correspondence implies that the cardinality of two sets are the same.
+
+\section*{Answer 3}
+
+\paragraph{a.}
+There exist $Z^+ \times Z^+ = (Z^+)^2$ mappings from $\{0,1\}$ to $Z^+$ and since $Z^+$ is countable $(Z^+)^2$ is also countable therefore the functions from $\{0,1\}$ to $Z^+$ is countable. 
+
+\paragraph{b.}
+There exist $(Z^+)^n$ mappings from $\{1,2,....,n\}$ to $Z^+$ and since $(Z^+)^n$ is countable the functions from $\{1,2,.....,n\}$ to $Z^+$ are countable.
+
+\paragraph{c.}
+Since mappings from  $Z^+$ to $\{0,1\}$ is a subset of this set and that it is uncountable the set of functions from $Z^+$ to $Z^+$ is uncountable.\\
+
+\paragraph{d.}
+By cantor diagonalization we can always choose a different combination. \\
+\begin{tabular}{c c c c c}
+     f(1) & f(2) & f(3) & f(4) & ..... \\
+     1 & 0 & 0 & 1 & ... \\ 
+     1 & 0 & 1 & 1 & ... \\ 
+     1 & 1 & 0 & 1 & ... \\ 
+     0 & 0 & 0 & 0 & ... \\ 
+\end{tabular} \\\\
+
+It is obvious to see that the functions from $Z^+$ to $\{0,1\}$ is uncountable.
+
+\paragraph{e.}
+Let's assume after some value $N$, $f(n) = 0$ for $n > N$\\
+
+\begin{tabular}{c c c c c c c}
+     f(1) & f(2) & f(3) & f(4) & ..... & f(N) & ..... \\
+     1 & 0 & 0 & 1 & ... & 0 & ...(only zeros) \\ 
+     1 & 0 & 1 & 1 & ... & 1 & ...(only zeros)\\ 
+     1 & 1 & 0 & 1 & ... & 1 & ...(only zeros)\\ 
+     0 & 0 & 0 & 0 & ... & 0 & ...(only zeros)\\ 
+\end{tabular} \\\\
+
+so there are $2^N$ different mappings. So the set of functions are countable.\\
+
+\section*{Answer 4}
+
+\paragraph{a.}
+
+By stirlings approximation we approximate $n! = \sqrt{2\pi n}(\frac{n}{e})^n$. By limit definition of $\Theta$\\
+
+$\lim_{n\to\infty} \frac{\sqrt{2\pi n}(\frac{n}{e})^n}{n^n} = \lim_{n\to\infty} \frac{1}{e^n} = 0$.\\
+
+By limit definition $n!$ is not $\Theta(n^n)$.\\
+
+\paragraph{b.}
+
+$\lim_{n\to\infty} \frac{(n+a)^b}{n^b} = \lim_{n\to\infty} \frac{n^b}{n^b} = 1$ since $\lim_{n\to\infty} \frac{n^k}{n^b} = 0$ where $k \in \{0,1,2, ...,b-1\}$.\\
+
+By limit definition $(n+a)^b$ is $\Theta(n^b)$.\\
+
+\section*{Answer 5}
+
+\paragraph{a.}
+
+For $x < y$ we see that:\\
+
+$((2^x- 1) \mod (2^y - 1)  = 2^x - 1)$ since $(2^x - 1 < 2^y - 1)$ and,\\
+
+$(2^{x \mod y} - 1 = 2^x - 1)$ since $(x \mod y = x)$ since $x < y$\\
+
+For $x = y$:\\
+
+$(x \mod y = 0)$ and, $(2^x - 1 = 2^y - 1)$ therefore\\
+
+$(2^x - 1) \mod (2^y - 1) = 0 = 2^{x \mod y} - 1$\\
+
+So for $x \le y$ we see that\\
+
+$(2^x - 1) \mod (2^y - 1) = 2^{x \mod y} - 1$\\
+
+For $x > y$ we see that:\\
+
+$(2^x - 1 \mod 2^y -1) = (2^x - 1 - 2^y + 1 \mod 2^y - 1)$ since $(2^x - 1 > 2^y - 1)$.\\
+
+And since $x > y$ we can write the equation as\\
+
+$(2^x - 1 - 2^y + 1 \mod 2^y -1) = (2^y*(2^{x-y} - 1) \mod 2^y - 1) = (2^{x-y} - 1 \mod 2^y -1)$ since\\ 
+
+$2^y \mod 2^y - 1 = 1$\\
+
+Now assume let's assume for some positive integer k, $(x - k*y \le y)$.\\
+
+Then if we reduce the equation by substracting $2^y -1$ k times.\\
+
+We trasnform the equation from $((2^x- 1) \mod (2^y - 1))$ to $(2^{x-k*y} - 1 \mod 2^y - 1)$.\\
+
+We can conclude that $(2^{x-k*y} - 1 \mod 2^y - 1) = 2^{x-k*y \mod y} - 1$.\\
+
+Since $(x -k*y \mod y) = x \mod y$ we conclude that for all $x,y \in Z^+$; $(2^x - 1 \mod 2^y - 1) = (2^{x \mod y} - 1)$.\\
+
+\paragraph{b.}
+ 
+Bais step:\\
+
+    For $x \in Z^+$ and $y = 1$ we see that.\\
+    
+    $gcd(2^x -1, 2^y -1) = gcd(1, 2^x -1) = 1 = 2^{gcd(x,1)} - 1$\\
+    
+Inductive step: \\
+
+    For $x \in Z^+$ and $y \in \{1,2,3,......,n\}$ we assume $gcd(2^x -1, 2^y -1) = 2^{gcd(x,y)} -1$\\
+    
+    Observe that.\\
+    
+    $gcd((2^x -1), (2^{n+1} -1)) = gcd((2^a -1), (2^{n+1} - 1))$ where $a = (x \mod n+1)$\\
+    
+    since $(x \mod n+1) < n+1$ we see that $x\in \{1,2,....,n\}$, also $n+1 \in Z^+$.\\
+    
+    So by the assumption we can say that $gcd((2^{x \mod n+1} -1),(2^{n+1} - 1)) = 2^{gcd((x \mod n+1),n+1)} - 1$.\\
+    
+    Since $gcd(x,n+1) = gcd((x\mod n+1),n+1)$ we conclude that.\\
+    
+    $gcd((2^{x} -1),(2^{n+1} - 1)) = 2^{gcd(x ,n+1)} - 1$.\\
+    
+So by strong induction we conclude that.\\
+
+For $x,y \in Z^+$.\\
+
+$gcd(2^x -1, 2^y -1) = 2^{gcd(x,y)} -1$
+
+
+
+\end{document}
